@@ -19,6 +19,14 @@ import Hamburger from "./Hamburger.png";
 
 
 
+var height = {
+  height: "100vh"
+};
+
+if (isMobile) {
+  height = window.innerHeight;
+}
+
 class App extends React.Component {
 
   state = {
@@ -91,7 +99,7 @@ class App extends React.Component {
         <div data-spy="scroll" data-target="#myScrollspy" data-offset="15">
           <div className="app">
             <div className="section" >
-              <div id="home">
+              <div style={height} id="home">
                 <div id="kristin">
                   <h1 id="title">Kristin Henno</h1>
                   <p id="resume"> &nbsp;Content Creator</p>
@@ -288,7 +296,7 @@ background-size:cover;
 }
 
 #home{
-height: 100vh;
+// height: 100vh;
 background-image: url(./Background.png);
 background-size:cover;
 
@@ -321,7 +329,7 @@ background-size:cover;
   }
 
   #home{
-    height: 100vh;
+    // height: 100vh;
     background-image: url(./Background.png);
     background-size:cover;
     background-position: 18%;
