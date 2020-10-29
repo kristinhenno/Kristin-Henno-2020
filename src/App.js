@@ -18,9 +18,6 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 import Hamburger from "./Hamburger.png";
 
 
-
-
-
 // if (isMobile) {
 //   height = window.innerHeight;
 // }
@@ -32,7 +29,10 @@ class App extends React.Component {
     vYalue: 0,
     onScreen: true,
     place: 0,
-    showNav: false
+    showNav: false,
+    style: { "height": window.innerHeight },
+    style2: { "height": "100vh" },
+
   }
 
   handleSetActive = (to) => {
@@ -58,6 +58,7 @@ class App extends React.Component {
       const isTop = window.scrollY;
       const place = window.innerHeight + 100;
 
+
       if (isTop > place) {
         this.setState({
           onScreen: false,
@@ -82,14 +83,16 @@ class App extends React.Component {
 
         })
       }
+
     });
   }
 
 
 
   render() {
+    console.log(this.state.style);
+    console.log(this.state.style2);
 
-    console.log(window.innerHeight);
 
 
     return (
@@ -97,7 +100,7 @@ class App extends React.Component {
         <div data-spy="scroll" data-target="#myScrollspy" data-offset="15">
           <div className="app">
             <div className="section" >
-              <div id="home">
+              <div style={isMobile ? this.state.style : this.state.style2} id="home">
                 <div id="kristin">
                   <h1 id="title">Kristin Henno</h1>
                   <p id="resume"> &nbsp;Content Creator</p>
