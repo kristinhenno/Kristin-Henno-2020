@@ -330,8 +330,9 @@ background-size:cover;
     background-image: url(./Background.png);
     background-size:cover;
     background-position: 18%;
-    max-height: 84vh;
     overflow:hidden;
+    -webkit-background-size: auto 113%;
+    background-attachment: scroll;
     
     }
 
