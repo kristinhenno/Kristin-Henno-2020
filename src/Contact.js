@@ -61,9 +61,10 @@ class Contact extends Component {
  </a>
               </div>
 
-              {isMobile ? <div id="contactPicBox">
-                <img id="contactPic" src={Pic2} />
-              </div> : <div></div>}
+              {isMobile ?
+                <div id="contactPicBox">
+                  <img id="contactPic" src={Pic2} />
+                </div> : <div></div>}
 
             </div>
 
@@ -170,10 +171,12 @@ display:none;
 
   #contactPicBox{
     padding: 7vh 0 4vh 0;
+    display:block;
   }
 
   #contactPic{
     width: 100%;
+    display:block;
   }
 }
 `;
