@@ -88,8 +88,8 @@ class App extends React.Component {
 
 
   render() {
-    console.log(this.state.place);
-    console.log(this.state.vYalue);
+
+    console.log(window.innerHeight);
 
 
     return (
