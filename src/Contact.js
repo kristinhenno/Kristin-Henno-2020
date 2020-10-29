@@ -135,6 +135,14 @@ margin: 0;
 padding: 14vh 18% 1vh;
 }
 
+#contactPicBox{
+display:none;
+}
+
+#contactPic{
+  display:none;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 600px) {
 
   #profileBox{
