@@ -128,7 +128,8 @@ class Experience extends Component {
               </ul>
             </div>
           </div>
-          <div id="bottomRow">
+
+          <div id="row">
             <div className="schoolBox">
               <p className="school">Tiger Woods Foundation</p>
               <p className="year">2017-2018</p>
@@ -142,6 +143,7 @@ class Experience extends Component {
               </ul>
             </div>
           </div>
+
         </div>
       </Style >
     );
@@ -227,6 +229,7 @@ font-size: 1.3vmax;
 #expBox{
 background-color: #f2f7f2;
 min-height: 100vh;
+padding-bottom: 14vh;
 }
  #expTitle{
 font-family: 'Gentium Basic', serif;
@@ -339,6 +342,11 @@ padding: 14vh 18% 1vh;
       margin: 0;
       padding: 4vh 18% 1vh;
        }
+
+       #expBox{
+     
+        padding-bottom: 4vh;
+        }
  }
 
 
