@@ -101,7 +101,7 @@ class App extends React.Component {
               <div style={isMobile ? this.state.style : this.state.style2} id="home">
                 <div id="kristin">
                   <h1 id="title">Kristin Henno</h1>
-                  <p id="resume"> &nbsp;Content Creator</p>
+                  <p id="resume"> &nbsp;Developer & Content Creater</p>
 
                 </div>
 
