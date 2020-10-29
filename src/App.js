@@ -23,9 +23,9 @@ var height = {
   height: "100vh"
 };
 
-if (isMobile) {
-  height = window.innerHeight;
-}
+// if (isMobile) {
+//   height = window.innerHeight;
+// }
 
 class App extends React.Component {
 
