@@ -260,7 +260,6 @@ background-size:cover;
 
   margin-left: 86%;
   padding: 0.75% 2%;
-  z-index: 100;
 }
 
 .down: hover{
@@ -374,7 +373,6 @@ bottom: 0;
   font-size: 6.4vmax;
     margin: 0;
     text-align: center;
-    z-index: 100;
 
 
 }
