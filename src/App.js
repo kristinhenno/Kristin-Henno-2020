@@ -333,8 +333,6 @@ background-size:cover;
     overflow:hidden;
     // -webkit-background-size: auto 113%;
     // background-attachment: scroll;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
 
     
     }
