@@ -340,6 +340,22 @@ padding: 14vh 18% 1vh;
 .last{
   padding-bottom: 7vh;
 }
+
+.text {
+  font-family: 'Quicksand';
+  font-weight: 800;
+  margin-bottom: 1vh;
+  font-size: 2vmax;
+  margin-top: 5vh;
+  /* margin-right: -1%; */
+}
+
+.text2 {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  margin-bottom: 1vh;
+  font-size: 1.2vmax;
+}
 }
 `;
 

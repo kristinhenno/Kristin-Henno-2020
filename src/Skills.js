@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import StarRatings from "react-star-ratings";
 
+const skills = [{ name: "WordPress", rating: 5 }, , { name: "JavaScript", rating: 4 }, { name: "CSS", rating: 5 }, { name: "React.js", rating: 4 }, { name: "JSON", rating: 5 }, { name: "mySQL", rating: 3.5 }, { name: "mongoDB", rating: 3.75 }, { name: "HTML", rating: 5 }];
+
+const sortedSkills = skills.sort((a, b) => a.rating < b.rating ? 1 : -1);
+
+const tools = [{ name: "Postman", rating: 5 }, { name: "Microsoft Office", rating: 5 }, { name: "Git / Git Flow", rating: 4 }, { name: "Google Web Design", rating: 5 }, { name: "Adobe Photoshop", rating: 5 }, { name: "Adobe Premiere", rating: 5 }, { name: "Adobe AfterEffects", rating: 4 }, { name: "Atlassian / Jira", rating: 5 }, { name: "FreshDesk", rating: 5 }, { name: "ZenDesk", rating: 5 }, { name: "VS Code", rating: 4.5 }, { name: "Web Inspector Tools", rating: 5 }, { name: "FileZilla", rating: 5 }, { name: "Heroku", rating: 5 }, { name: "Digital Ocean", rating: 5 }, { name: "Mac", rating: 5 }];
+
+const sortedTools = tools.sort((a, b) => a.rating < b.rating ? 1 : -1);
+
 class Skills extends Component {
   state = {
-    skills: [{ name: "WordPress", rating: 5 }, , { name: "JavaScript", rating: 4 }, { name: "CSS", rating: 5 }, { name: "React.js", rating: 4 }, { name: "JSON", rating: 5 }, { name: "mySQL", rating: 3.5 }, { name: "mongoDB", rating: 3.75 }, { name: "HTML", rating: 5 }],
-    tools: [{ name: "Postman", rating: 5 }, { name: "Microsoft Office", rating: 5 }, { name: "Git / Git Flow", rating: 4 }, { name: "Google Web Design", rating: 5 }, { name: "Adobe Photoshop", rating: 5 }, { name: "Adobe Premiere", rating: 5 }, { name: "Adobe AfterEffects", rating: 4 }, { name: "Atlassian / Jira", rating: 5 }, { name: "FreshDesk", rating: 5 }, { name: "ZenDesk", rating: 5 }, { name: "VS Code", rating: 4.5 }, { name: "Web Inspector Tools", rating: 5 }, { name: "FileZilla", rating: 5 }, { name: "Heroku", rating: 5 }, { name: "Digital Ocean", rating: 5 }, { name: "Mac", rating: 5 }],
+    skills: sortedSkills,
+    tools: sortedTools,
     sortedSkills: [],
     sortedTools: [],
   }
@@ -14,30 +22,30 @@ class Skills extends Component {
 
   render() {
 
+
     return (
       <Style>
         <div id="skillsBox">
           <div id="skillsTitle">Skills</div>
           <div id="under"></div>
           <div className="skillBox">
-            {
-              this.state.skills.sort((a, b) => a.rating < b.rating ? 1 : -1).map((array, index) =>
-                <div className="skillContainer">
-                  <div className="skills">{array.name}</div>
-                  <div className="stars">
-                    <StarRatings
-                      rating={array.rating}
-                      starRatedColor="#166311"
-                      numberOfStars={5}
-                      name="rating"
-                      starDimension="2vh"
-                      starSpacing="0.7%"
-                      className="star"
-                      starEmptyColor="white"
-                    />
-                  </div>
+            {this.state.skills.map((array, index) =>
+              <div className="skillContainer">
+                <div className="skills">{array.name}</div>
+                <div className="stars">
+                  <StarRatings
+                    rating={array.rating}
+                    starRatedColor="#166311"
+                    numberOfStars={5}
+                    name="rating"
+                    starDimension="2vh"
+                    starSpacing="0.7%"
+                    className="star"
+                    starEmptyColor="white"
+                  />
                 </div>
-              )}
+              </div>
+            )}
           </div>
 
 
@@ -45,7 +53,7 @@ class Skills extends Component {
           <div id="under"></div>
 
           <div className="toolsBox">
-            {this.state.tools.sort((a, b) => a.rating < b.rating ? 1 : -1).map((array, index) =>
+            {this.state.tools.map((array, index) =>
               <div className="skillContainer">
                 <div className="skills">{array.name}</div>
                 <div className="stars">

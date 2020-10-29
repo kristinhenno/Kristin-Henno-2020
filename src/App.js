@@ -249,7 +249,7 @@ background-size:cover;
   background-color: #f7f3e9;
   color: black;
   position: absolute;
-  bottom: 0;
+  bottom: 0vh;
   margin: 0;
 
   margin-left: 86%;
@@ -359,6 +359,7 @@ background-size:cover;
   width: 100%;
 margin-left: 0;
 width: 100%;
+bottom: 0vh;
 }
 .arrow1{
   font-size: 6.4vmax;
