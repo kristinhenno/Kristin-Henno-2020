@@ -366,7 +366,7 @@ background-size:cover;
   width: 100%;
 margin-left: 0;
 width: 100%;
-bottom: 16vh;
+bottom: 0;
 }
 .arrow1{
   font-size: 6.4vmax;
