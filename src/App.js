@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components';
 import React from "react";
-import background from "./Background.png";
 import Profile from "./Profile";
 import Experience from "./Experience";
 import Projects from "./Projects";
@@ -202,7 +200,7 @@ const Style = styled.section`
 }
 .active{
   color:white;
-  background-image: url(./Palms.png);
+  background-image: url(./Palms.jpg);
 background-size:cover;
 }
 
@@ -298,7 +296,7 @@ background-size:cover;
 
 #home{
 // height: 100vh - 44px;
-background-image: url(./Background.png);
+background-image: url(./Background.jpg);
 background-size:cover;
 
 }
@@ -330,7 +328,7 @@ background-size:cover;
   }
 
   #home{
-    background-image: url(./Background.png);
+    background-image: url(./Background.jpg);
     background-size:cover;
     background-position: 18%;
     overflow:hidden;

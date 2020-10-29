@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import Pic from "./Pic.png"
+import Pic from "./Pic.jpg"
 
 class Profile extends Component {
     state = {
@@ -18,7 +18,7 @@ class Profile extends Component {
                             <h1 id="name">Kristin Henno</h1>
                             <div id="under"></div>
                             <p id="location">Santa Barbara, CA</p>
-                            <p id="bodyText">Kristin Henno has a background in web development and content creation.  With a degree from University of California, Irvine and NCAA student-athlete All American Academic Honors, Kristin is adept at handling a wide range of responsibilities and thrives under pressure. Professional experience at Impact, SEE International, PGA TOUR, and the Tiger Woods Foundation.
+                            <p id="bodyText">Kristin Henno has a background in web development and content creation.  With a degree from University of California, Irvine and NCAA student-athlete All American Academic Honors, she is adept at handling a wide range of responsibilities and thrives under pressure. Kristin has professional experience at Impact, SEE International, PGA TOUR, and the Tiger Woods Foundation.
 </p>
                         </div>
                         <div id="pic"><img id="khimg" src={Pic} /></div>
