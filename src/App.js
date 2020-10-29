@@ -330,7 +330,8 @@ background-size:cover;
     background-image: url(./Background.png);
     background-size:cover;
     background-position: 18%;
-    height: calc(100vh - 44px);
+    max-height: 84vh;
+    overflow:hidden;
     
     }
 
@@ -365,7 +366,7 @@ background-size:cover;
   width: 100%;
 margin-left: 0;
 width: 100%;
-bottom: 0;
+bottom: 16vh;
 }
 .arrow1{
   font-size: 6.4vmax;
