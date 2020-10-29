@@ -19,9 +19,7 @@ import Hamburger from "./Hamburger.png";
 
 
 
-var height = {
-  height: "100vh"
-};
+
 
 // if (isMobile) {
 //   height = window.innerHeight;
@@ -99,7 +97,7 @@ class App extends React.Component {
         <div data-spy="scroll" data-target="#myScrollspy" data-offset="15">
           <div className="app">
             <div className="section" >
-              <div style={height} id="home">
+              <div id="home">
                 <div id="kristin">
                   <h1 id="title">Kristin Henno</h1>
                   <p id="resume"> &nbsp;Content Creator</p>
@@ -296,7 +294,7 @@ background-size:cover;
 }
 
 #home{
-// height: 100vh;
+// height: 100vh - 44px;
 background-image: url(./Background.png);
 background-size:cover;
 
@@ -329,10 +327,10 @@ background-size:cover;
   }
 
   #home{
-    // height: 100vh;
     background-image: url(./Background.png);
     background-size:cover;
     background-position: 18%;
+    height: calc(100vh - 44px);
     
     }
 
@@ -367,12 +365,14 @@ background-size:cover;
   width: 100%;
 margin-left: 0;
 width: 100%;
-bottom: 0vh;
+bottom: 44px;
 }
 .arrow1{
   font-size: 6.4vmax;
     margin: 0;
     text-align: center;
+
+
 }
 #resume{
   font-size: 1.6em;
@@ -414,6 +414,12 @@ bottom: 0vh;
   
 
 }
+
+                                          
+                                                                 
+}
+
+
 }
 
 
