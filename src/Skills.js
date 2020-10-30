@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import StarRatings from "react-star-ratings";
 
-const skills = [{ name: "WordPress", rating: 5 }, , { name: "JavaScript", rating: 4 }, { name: "CSS", rating: 5 }, { name: "React.js", rating: 4 }, { name: "JSON", rating: 5 }, { name: "mySQL", rating: 3.5 }, { name: "mongoDB", rating: 3.75 }, { name: "HTML", rating: 5 }];
+const skills = [{ name: "Node.js", rating: 5 }, , { name: "JavaScript", rating: 4 }, { name: "CSS", rating: 5 }, { name: "React.js", rating: 4 }, { name: "JSON", rating: 5 }, { name: "mySQL", rating: 3.5 }, { name: "mongoDB", rating: 3.75 }, { name: "HTML", rating: 5 }];
 
 const sortedSkills = skills.sort((a, b) => a.rating < b.rating ? 1 : -1);
 
