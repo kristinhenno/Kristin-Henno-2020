@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import DownloadButton from "./DownloadButton.png";
+import KristinHenno2020 from "./KristinHenno2020.pdf";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 class Experience extends Component {
   state = {
@@ -14,6 +22,8 @@ class Experience extends Component {
           {/* <h1 id="expTitle">
             Experience
           </h1> */}
+          {isMobile ? <div></div> :
+            <a id="downloadLink" href={KristinHenno2020} download><img id="download" src={DownloadButton} /></a>}
           <div id="expTitle">Education</div>
           <div id="under"></div>
           <div id="row">
@@ -152,6 +162,14 @@ class Experience extends Component {
 }
 
 const Style = styled.section`
+
+#download{
+  position: absolute;
+    width: 3%;
+    margin-top: 8.5vh;
+    margin-left: 77%;
+}
+}
 
 #last{
   margin-bottom: 2vh;
