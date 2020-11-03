@@ -339,7 +339,7 @@ background-size:cover;
     }
 
     #kristin {
-      // color: black;
+      color: black;
       position: absolute;
       top: 7vh;
       left: 0%;
@@ -348,8 +348,8 @@ background-size:cover;
 
   #title{
     margin-left: 4%;
-    // color: black;
-    // border-bottom: black 1px solid;
+    color: black;
+    border-bottom: black 1px solid;
     margin-right: 4%;
     font-size: 3.4em;
   }
