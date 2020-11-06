@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import Github from "./Github.png";
-import LinkedIn from "./LinkedIn.png";
-import Mail from "./Mail.png";
-import Vimeo from "./Vimeo.png";
-import Pic2 from "./Pic2.png";
+import Github from "../Images/Github.png";
+import LinkedIn from "../Images/LinkedIn.png";
+import Mail from "../Images/Mail.png";
+import Vimeo from "../Images/Vimeo.png";
+import Pic2 from "../Images/Pic2.png";
 import {
   BrowserView,
   MobileView,

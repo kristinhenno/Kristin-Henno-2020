@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import Pic from "./Pic.jpg"
+import Pic from "../Images/Pic.jpg"
 
 class Profile extends Component {
     state = {

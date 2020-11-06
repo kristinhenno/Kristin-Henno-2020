@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import StarRatings from "react-star-ratings";
+import Skill from "./Skill";
 
 const skills = [{ name: "Node.js", rating: 5 }, , { name: "JavaScript", rating: 4 }, { name: "CSS", rating: 5 }, { name: "React.js", rating: 4 }, { name: "JSON", rating: 5 }, { name: "mySQL", rating: 3 }, { name: "mongoDB", rating: 3.5 }, { name: "HTML", rating: 5 }];
 
@@ -19,9 +19,7 @@ class Skills extends Component {
   }
 
 
-
   render() {
-
 
     return (
       <Style>
@@ -30,50 +28,18 @@ class Skills extends Component {
           <div id="under"></div>
           <div className="skillBox">
             {this.state.skills.map((array, index) =>
-              <div className="skillContainer">
-                <div className="skills">{array.name}</div>
-                <div className="stars">
-                  <StarRatings
-                    rating={array.rating}
-                    starRatedColor="#166311"
-                    numberOfStars={5}
-                    name="rating"
-                    starDimension="2vh"
-                    starSpacing="0.7%"
-                    className="star"
-                    starEmptyColor="white"
-                  />
-                </div>
-              </div>
+              <Skill {...array} />
             )}
           </div>
-
-
           <div id="skillsTitle2">Tools</div>
           <div id="under"></div>
 
           <div className="toolsBox">
             {this.state.tools.map((array, index) =>
-              <div className="skillContainer">
-                <div className="skills">{array.name}</div>
-                <div className="stars">
-                  <StarRatings
-                    rating={array.rating}
-                    starRatedColor="#166311"
-                    numberOfStars={5}
-                    name="rating"
-                    starDimension="2vh"
-                    starSpacing="0.7%"
-                    className="star"
-                    starEmptyColor="white"
-                  />
-                </div>
-              </div>
+              <Skill {...array} />
             )}
           </div>
-
         </div>
-
 
       </Style >
     );
@@ -82,27 +48,7 @@ class Skills extends Component {
 }
 
 const Style = styled.section`
-.skillContainer{
-display:flex;
-height: 5vh; 
-}
 
-.star-ratings{
-  width: 100%;
-}
-
-.skills{
-  width: 45%;
-  font-family:  'Quicksand';
-  font-weight: 500;
-  font-size: 1.15vmax;
-
-
-}
-.stars{
-  width: 20%;
-  width: 40%;
-}
 #skillsBox{
 min-height: 100vh;
 background-color:white;
@@ -128,19 +74,6 @@ padding: 4vh 18% 1vh;
   margin-left: 18%;
   margin-bottom: 4vh;
 }
-// #row{
-//   display: flex;
-//   padding: 0 18%;
-//   margin-bottom: 3vh;
-// }
-
-// #lastRow{
-//   padding-bottom: 14vh;
-//   display: flex;
-//   padding: 0 18%;
-//   padding-bottom: 14vh;
-// }
-
 .skillBox{
 
 display:flex;

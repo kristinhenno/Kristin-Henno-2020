@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import DownloadButton from "./DownloadButton.png";
-import KristinHenno2020 from "./KristinHenno2020.pdf";
+import DownloadButton from "../Images/DownloadButton.png";
+import KristinHenno2020 from "../Images/KristinHenno2020.pdf";
 import {
   BrowserView,
   MobileView,

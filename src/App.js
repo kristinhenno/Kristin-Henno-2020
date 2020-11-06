@@ -1,11 +1,11 @@
 import './App.css';
 import styled from 'styled-components';
 import React from "react";
-import Profile from "./Profile";
-import Experience from "./Experience";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import Skills from "./Skills";
+import Profile from "./Components/Profile";
+import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Skills from "./Components/Skills";
 import {
   BrowserView,
   MobileView,
@@ -13,7 +13,7 @@ import {
   isMobile
 } from "react-device-detect";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import Hamburger from "./Hamburger.png";
+import Hamburger from "./Images/Hamburger.png";
 
 
 // if (isMobile) {

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import LCH from "./LCH.png";
-import DLH from "./DLH.png";
-import HomeGrid from "./HomeGrid.png";
-import open from "./open.png";
-import Hero from "./Hero.png";
-import See from "./See.png";
-import Rory from "./Rory.png";
+import LCH from "../Images/LCH.png";
+import DLH from "../Images/DLH.png";
+import HomeGrid from "../Images/HomeGrid.png";
+import open from "../Images/open.png";
+import Hero from "../Images/Hero.png";
+import See from "../Images/See.png";
+import Rory from "../Images/Rory.png";
 
 class Projects extends Component {
   state = {
